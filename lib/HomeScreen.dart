@@ -185,9 +185,16 @@ class SideBar extends StatelessWidget {
             onTap: () => Navigator.pushNamed(context, "/MealList"),
           ),
           ListTile(
+            leading: Icon(Icons.article_outlined),
+            title: Text('Medical Record'),
+            trailing: Icon(Icons.arrow_forward_ios_outlined),
+            onTap: () => Navigator.pushNamed(context, "/MedicalRecord"),
+          ),
+          ListTile(
             leading: Icon(Icons.accessibility_new_outlined),
             title: Text('Daily Aim & Results'),
             trailing: Icon(Icons.arrow_forward_ios_outlined),
+            onTap: () => Navigator.pushNamed(context, "/DailyAim"),
           ),
           Divider(),
           ListTile(

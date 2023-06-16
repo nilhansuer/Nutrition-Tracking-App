@@ -4,6 +4,8 @@ import 'package:nutrition_tracker_app/MealList.dart';
 import 'package:flutter/material.dart';
 import 'HomeScreen.dart';
 import 'UserSettings.dart';
+import 'DailyAim.dart';
+import 'package:nutrition_tracker_app/MedicalRecord.dart';
 import 'package:nutrition_tracker_app/LoginScreen.dart';
 import 'package:nutrition_tracker_app/SignupScreen.dart';
 
@@ -20,10 +22,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/MealList": (context) => MealList(),
+        "/MealList": (context) => MealListPage(),
         "/LoginScreen": (context) => LoginScreen(),
         "/HomeScreen": (context) => HomeScreen(),
         "/UserSettings": (context) => UserSettings(),
+        "/MedicalRecord": (context) => MedicalRecord(),
+        "/DailyAim": (context) => DailyAim(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,

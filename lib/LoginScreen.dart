@@ -97,8 +97,8 @@ class SignInButton extends StatefulWidget {
   final TextEditingController emailcontroller;
   const SignInButton(
       {Key? key,
-      required this.passwordcontroller,
-      required this.emailcontroller})
+        required this.passwordcontroller,
+        required this.emailcontroller})
       : super(key: key);
 
   @override
@@ -113,7 +113,7 @@ class _SignInButtonState extends State<SignInButton> {
     Future<void> _login() async {
       try {
         final UserCredential userCredential =
-            await _auth.signInWithEmailAndPassword(
+        await _auth.signInWithEmailAndPassword(
           email: widget.emailcontroller.text.trim(),
           password: widget.passwordcontroller.text.trim(),
         );
